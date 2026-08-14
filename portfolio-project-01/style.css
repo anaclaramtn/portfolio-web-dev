@@ -15,27 +15,38 @@
   --promptColor: #7ee787;     
 
   --patternRadius: 8px;
+
+  --pictureBg: url("ocean.png")
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: var(--pageBg);
+  background-image: var(--pictureBg);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   font-family: 'Courier New', Courier, monospace;
   padding: 20px;
+  overflow: hidden;
+  height: 100vh;
 }
 
 .terminal { 
   width: 100%;
-  max-width: 2000px;
+  max-width: 1800px;
   height: 800px;
   background-color: var(--terminalBg);
   border: 1px solid var(--borderColor);
   border-radius: var(--patternRadius);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 .terminal-header {
