@@ -1,0 +1,110 @@
+:root {
+  --pageBg: #034a66;          
+  --terminalBg: #0d1117;    
+  --headerBg: #21262d;       
+  --borderColor: #30363d;     
+  
+  --btnClose: #ff5f56;        
+  --btnMinimize: #ffbd2e;    
+  --btnMaximize: #27c93f;  
+
+  --titleColor: #8b949e;      
+  --textColor: #c9d1d9;       
+  --welcomeColor: #58a6ff;  
+  --highlightColor: #f0883e; 
+  --promptColor: #7ee787;     
+
+  --patternRadius: 8px;
+}
+
+body {
+  background-color: var(--pageBg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+}
+
+.terminal { 
+  width: 100%;
+  max-width: 2000px;
+  height: 700px;
+  background-color: var(--terminalBg);
+  border: 1px solid var(--borderColor);
+  border-radius: var(--patternRadius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+  overflow: hidden;
+}
+
+.terminal-header {
+  background-color: var(--headerBg);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.close { background-color: var(--btnClose); }
+.minimize { background-color: var(--btnMinimize); }
+.maximize { background-color: var(--btnMaximize); }
+
+.title {
+  color: var(--titleColor);
+  font-size: 0.85rem;
+}
+
+/* parte interna do terminal */
+.terminal-body {
+  padding: 20px;
+  color: var(--textColor);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.welcome-text {
+  color: var(--welcomeColor);
+  font-weight: bold;
+}
+
+.highlight {
+  color: var(--highlightColor);
+}
+
+.command-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.prompt {
+  color: var(--promptColor);
+  font-weight: bold;
+}
+
+.cursor {
+  width: 8px;
+  height: 18px;
+  background-color: var(--promptColor);
+  display: inline-block;
+  animation: piscar 0.8s infinite;
+}
+
+@keyframes piscar {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
