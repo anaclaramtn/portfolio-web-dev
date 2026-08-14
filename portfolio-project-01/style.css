@@ -30,7 +30,7 @@ body {
 .terminal { 
   width: 100%;
   max-width: 2000px;
-  height: 700px;
+  height: 800px;
   background-color: var(--terminalBg);
   border: 1px solid var(--borderColor);
   border-radius: var(--patternRadius);
