@@ -17,6 +17,12 @@
   --patternRadius: 8px;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--pageBg);
   display: flex;
@@ -25,6 +31,8 @@ body {
   min-height: 100vh;
   font-family: 'Courier New', Courier, monospace;
   padding: 20px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .file-name{
@@ -34,7 +42,8 @@ body {
 .terminal { 
   width: 100%;
   max-width: 2000px;
-  height: 800px;
+  height: calc(100vh - 40px);
+  max-height: 800px;
   background-color: var(--terminalBg);
   border: 1px solid var(--borderColor);
   border-radius: var(--patternRadius);
@@ -106,6 +115,12 @@ body {
   background-color: var(--promptColor);
   display: inline-block;
   animation: piscar 0.8s infinite;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 @keyframes piscar {
