@@ -12,6 +12,7 @@
   --textColor: #c9d1d9;       
   --welcomeColor: #58a6ff;  
   --highlightColor: #f0883e; 
+  --linksColor: #a5fde0;
   --promptColor: #7ee787;     
 
   --patternRadius: 8px;
@@ -98,6 +99,10 @@ body {
   color: var(--highlightColor);
 }
 
+.links-about {
+  color: var(--linksColor);
+}
+
 .command-line {
   display: flex;
   align-items: center;
@@ -126,4 +131,23 @@ body {
 @keyframes piscar {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
+}
+
+.readme-box {
+  border: 1px dashed var(--borderColor);
+  border-radius: 4px;
+  margin: 10px 0 20px 0;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.readme-header {
+  background-color: var(--headerBg);
+  color: var(--titleColor);
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+
+.readme-body {
+  padding: 12px;
+  color: var(--textColor);
 }
