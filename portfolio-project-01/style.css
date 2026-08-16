@@ -27,6 +27,10 @@ body {
   padding: 20px;
 }
 
+.file-name{
+    color: orange;
+}
+
 .terminal { 
   width: 100%;
   max-width: 2000px;
