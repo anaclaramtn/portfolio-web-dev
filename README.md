@@ -2,4 +2,4 @@
 
 repositório para a minha cadeira de desenvolvimento web, onde eu coloco o projeto atual da cadeira, nesse caso, até dia 31/08, que é o portfolio utilizando apenas html e css, e tambem os exercícios práticos em sala, para relembrar fundamentos
 
-![Print](image.png)
+![print](image-1.png)
