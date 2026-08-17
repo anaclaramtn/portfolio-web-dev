@@ -12,11 +12,16 @@
   --textColor: #c9d1d9;       
   --welcomeColor: #58a6ff;  
   --highlightColor: #f0883e; 
+  --linksColor: #a5fde0;
   --promptColor: #7ee787;     
 
   --patternRadius: 8px;
+}
 
-  --pictureBg: url("ocean.png")
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -26,27 +31,36 @@
 }
 
 body {
-  background-image: var(--pictureBg);
+  background-color: var(--pageBg);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   font-family: 'Courier New', Courier, monospace;
   padding: 20px;
-  overflow: hidden;
   height: 100vh;
+  overflow: hidden;
+}
+
+.file-name{
+    color: orange;
 }
 
 .terminal { 
   width: 100%;
-  max-width: 1800px;
-  height: 800px;
+  max-width: 2000px;
+  height: calc(100vh - 40px);
+  max-height: 800px;
   background-color: var(--terminalBg);
   border: 1px solid var(--borderColor);
   border-radius: var(--patternRadius);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
   overflow: hidden;
   overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .terminal-header {
@@ -85,6 +99,9 @@ body {
   color: var(--textColor);
   font-size: 0.95rem;
   line-height: 1.6;
+
+  flex: 1;
+  overflow: auto;
 }
 
 .welcome-text {
@@ -94,6 +111,10 @@ body {
 
 .highlight {
   color: var(--highlightColor);
+}
+
+.links-about {
+  color: var(--linksColor);
 }
 
 .command-line {
@@ -115,7 +136,49 @@ body {
   animation: piscar 0.8s infinite;
 }
 
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 @keyframes piscar {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+.readme-box {
+  border: 1px dashed var(--borderColor);
+  border-radius: 4px;
+  margin: 10px 0 20px 0;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.readme-header {
+  background-color: var(--headerBg);
+  color: var(--titleColor);
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+
+.readme-body {
+  padding: 12px;
+  color: var(--textColor);
+}
+
+/* scroll bar */
+.terminal-body::-webkit-scrollbar {
+  width: 8px;
+}
+.terminal-body::-webkit-scrollbar-track {
+  background-color: var(--terminalBg);
+}
+.terminal-body::-webkit-scrollbar-thumb {
+  background-color: var(--borderColor);
+  border-radius: 0px;
+  border: 2px solid var(--terminalBg)
+}
+.terminal-body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--promptColor);
+}
+

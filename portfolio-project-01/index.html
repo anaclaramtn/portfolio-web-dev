@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="dev.svg">
-</head>
-<body>
-
-    <main class="terminal">
-
-        <header class="terminal-header">
-            <div class="buttons">
-                <span class="btn close"></span>
-                <span class="btn minimize"></span>
-                <span class="btn maximize"></span>
-            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="dev.svg">
+    </head>
+    <body>
+        
+        <main class="terminal">
+            
+            <header class="terminal-header">
+                <div class="buttons">
+                    <span class="btn close"></span>
+                    <span class="btn minimize"></span>
+                    <span class="btn maximize"></span>
+                </div>
             <span class="title">guest@terminal.dev:~</span>
         </header>
-
+        
         <section class="terminal-body">
             <p class="welcome-text">Bem vindo ao meu portfolio!</p>
             <p>Digite <span class="highlight">'help'</span> para ver a lista de comandos.</p>
+            
             <br>
-            <p class="prompt">> ls -la ./projects</p>
+            <p class="prompt">> nano ./README.md</p>
+            <div class="readme-box">
+            <div class="readme-header">[ File: README.md | Lines: 7 ]</div>
+            <div class="readme-body">
+                <p># Hello, there! </p>
+                <p>Im Ana, a backend developer (mostly).</p>
+                <p>Im usually working with:</p>
+                <p>Java -> Spring Boot</p>
+                <p>JavaScript -> React</p>
+                <p>You should take a look at my projects on <a class="links-about" href="https://github.com/anaclaramtn">'github'</a>!</p>
+                <p>And Im always online on <a class="links-about" href="www.linkedin.com/in/anaclaramtn">'linkedin'</a>!</p>
+            </div>
+            </div>
+            
+
+            <br>
+            <p class="prompt">> ls ./projects</p>
+
 
             <ul class="project-list">
             <li>
                 <span class="file-perm"></span>
-                <a href="#" target="_blank" class="file-name">project/</a>
-                <span class="file-desc"># Project</span>
+                <a href="https://github.com/anaclaramtn/enduro-atari-2600" target="_blank" class="file-name">/enduro-atari-2600/</a>
+                <span class="file-desc"># Atari 2600's Enduro using Java Swing</span>
             </li>
             <li>
-                <span class="file-perm"></span> 
-                <a href="#" target="_blank" class="file-name">project</a>
-                <span class="file-desc"># Project</span>
+                <span class="file-perm"></span>
+                <a href="https://github.com/anaclaramtn/portfolio-web-dev" target="_blank" class="file-name">/portfolio-web-dev/</a>
+                <span class="file-desc"># This portfolio! Using HTML and CSS only</span>
+            </li>
+            <li>
+                <span class="file-perm"></span>
+                <a href="https://github.com/anaclaramtn/naval-battle-math-relations" target="_blank" class="file-name">/naval-battle-math-relations/</a>
+                <span class="file-desc"># Educative website to understand math relations</span>
+            </li>
+            <li>
+                <span class="file-perm"></span>
+                <a href="https://github.com/anaclaramtn/biblioteca-app" target="_blank" class="file-name">/biblioteca-app/</a>
+                <span class="file-desc"># Mobile app to the university's library</span>
+            </li>
+            <li>
+                <span class="file-perm"></span>
+                <a href="https://github.com/anaclaramtn/godot-projects" target="_blank" class="file-name">/godot-projects/</a>
+                <span class="file-desc"># Games using godot engine</span>
             </li>
             </ul>
+
+            
+
+
+            <br>
+            <p class="prompt">> nano ./README.md</p>
 
             <div class="command-line">
                 <span class="prompt">guest@terminal:~$</span>
