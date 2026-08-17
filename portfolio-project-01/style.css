@@ -216,4 +216,5 @@ body {
 .me-img{
   width: 300px;
   margin-right: 90px;
+  border-radius: 5%;
 }

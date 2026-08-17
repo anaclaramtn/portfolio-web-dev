@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="dev.svg">
-    </head>
-    <body>
-        
-        <main class="terminal">
-            
-            <header class="terminal-header">
-                <div class="buttons">
-                    <span class="btn close"></span>
-                    <span class="btn minimize"></span>
-                    <span class="btn maximize"></span>
-                </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="dev.svg">
+</head>
+
+<body>
+
+    <main class="terminal">
+
+        <header class="terminal-header">
+            <div class="buttons">
+                <span class="btn close"></span>
+                <span class="btn minimize"></span>
+                <span class="btn maximize"></span>
+            </div>
             <span class="title">guest@terminal.dev:~</span>
         </header>
-        
+
         <section class="terminal-body">
             <p class="welcome-text">Welcome to my <span class="highlight">portfolio</span> !</p>
-            <p>You can click on any command, and youll be redirected to a more datailed page (which you can close just pressing the red button above).</p>
+            <p>Click on any command to open a more detailed page. You can close it anytime by pressing the red button
+                above.</p>
             <br>
             <a class="prompt projects" href="/portfolio-project-01/readmeDetail.html">> nano ./README.md</a>
             <div class="readme-box">
-            <div class="readme-header">[ File: README.md | Lines: 4 ]</div>
-            <div class="readme-body">
-                <p># Hello, there! </p>
-                <p>Im Ana, a backend developer (mostly).</p>
-                <p>Right now, Im working with Java and React!</p>
-                <p>Drop by my <a class="links-about" href="https://github.com/anaclaramtn">'github'</a>, or connect with me on <a class="links-about" href="https://www.linkedin.com/in/anaclaramtn">'linkedin'</a>!</p>
+                <div class="readme-header">[ File: README.md | Lines: 4 ]</div>
+                <div class="readme-body">
+                    <p># Hello, there! </p>
+                    <p>Im Ana, a backend developer (mostly).</p>
+                    <p>Right now, Im working with Java and React!</p>
+                    <p>Drop by my <a class="links-about" href="https://github.com/anaclaramtn">'github'</a>, or connect
+                        with me on <a class="links-about" href="https://www.linkedin.com/in/anaclaramtn">'linkedin'</a>!
+                    </p>
+                </div>
             </div>
-            </div>
-            
+
 
             <br>
             <a class="prompt projects" href="projectsDetail.html">> ls ./projects</a>
 
             <ul class="project-list">
-            <li>
-                <span class="file-perm"></span>
-                <a href="https://github.com/anaclaramtn/portfolio-web-dev" target="_blank" class="file-name">/portfolio-web-dev/</a>
-                <span class="file-desc"># This portfolio! Using HTML and CSS only</span>
-            </li>
-            <li>
-                <span class="file-perm"></span>
-                <a href="https://github.com/anaclaramtn/enduro-atari-2600" target="_blank" class="file-name">/enduro-atari-2600/</a>
-                <span class="file-desc"># Atari 2600's Enduro using Java Swing</span>
-            </li>
-            <li>
-                <span class="file-perm"></span>
-                <a href="https://github.com/anaclaramtn/biblioteca-app" target="_blank" class="file-name">/biblioteca-app/</a>
-                <span class="file-desc"># Mobile app to the university's library</span>
-            </li>
+                <li>
+                    <span class="file-perm"></span>
+                    <a href="https://github.com/anaclaramtn/portfolio-web-dev" target="_blank"
+                        class="file-name">/portfolio-web-dev/</a>
+                    <span class="file-desc"># This portfolio! Using HTML and CSS only</span>
+                </li>
+                <li>
+                    <span class="file-perm"></span>
+                    <a href="https://github.com/anaclaramtn/enduro-atari-2600" target="_blank"
+                        class="file-name">/enduro-atari-2600/</a>
+                    <span class="file-desc"># Atari 2600's Enduro using Java Swing</span>
+                </li>
+                <li>
+                    <span class="file-perm"></span>
+                    <a href="https://github.com/anaclaramtn/biblioteca-app" target="_blank"
+                        class="file-name">/biblioteca-app/</a>
+                    <span class="file-desc"># Mobile app to the university's library</span>
+                </li>
             </ul>
 
-            
+
             <br>
             <p class="prompt">> tree ./skills</p>
             <pre class="tree-output">
@@ -86,4 +94,5 @@
 
     </main>
 </body>
+
 </html>
