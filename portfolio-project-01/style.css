@@ -152,6 +152,9 @@ body {
 .projects:hover{
   color: var(--linksColor);
 }
+.projects{
+  text-decoration: none;
+}
 
 .cursor {
   width: 8px;
@@ -216,7 +219,7 @@ body {
 }
 
 .text-tree:hover{
-  color: var(--highlightColor);
+  color: var(--highlightColor-2);
 }
 
 .container-columns{
@@ -239,3 +242,10 @@ body {
   margin-right: 50px;
   border-radius: 2%;
 }
+
+.json-output {
+  color: var(--textColor);
+  font-family: inherit;
+  margin: 0px 0 20px -100px;
+}
+
