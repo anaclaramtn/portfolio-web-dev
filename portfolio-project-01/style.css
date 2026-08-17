@@ -12,6 +12,7 @@
   --textColor: #c9d1d9;       
   --welcomeColor: #58a6ff;  
   --highlightColor: #ffa15e; 
+  --highlightColor-2: rgb(202, 145, 255); 
   --linksColor: #a5fde0;
   --promptColor: #7ee787;     
 
@@ -116,6 +117,10 @@ body {
   color: var(--highlightColor);
 }
 
+.highlight-2 {
+  color: var(--highlightColor-2);
+}
+
 .links-about {
   color: var(--highlightColor);
 }
@@ -132,6 +137,16 @@ body {
 .prompt {
   color: var(--promptColor);
   font-weight: bold;
+}
+
+.prompt-link {
+  color: var(--promptColor);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.prompt-link:hover {
+  color: var(--linksColor);
 }
 
 .projects:hover{
@@ -217,4 +232,10 @@ body {
   width: 300px;
   margin-right: 90px;
   border-radius: 5%;
+}
+
+.portfolio-img{
+  width: 600px;
+  margin-right: 50px;
+  border-radius: 2%;
 }
