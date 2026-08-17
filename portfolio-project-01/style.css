@@ -134,6 +134,10 @@ body {
   font-weight: bold;
 }
 
+.projects:hover{
+  color: var(--linksColor);
+}
+
 .cursor {
   width: 8px;
   height: 18px;
@@ -198,4 +202,18 @@ body {
 
 .text-tree:hover{
   color: var(--highlightColor);
+}
+
+.container-columns{
+  display: flex;
+  gap: 100px;
+}
+
+.column {
+  flex: auto;
+}
+
+.me-img{
+  width: 300px;
+  margin-right: 90px;
 }
