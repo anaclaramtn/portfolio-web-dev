@@ -11,7 +11,7 @@
   --titleColor: #8b949e;      
   --textColor: #c9d1d9;       
   --welcomeColor: #58a6ff;  
-  --highlightColor: #f0883e; 
+  --highlightColor: #ffa15e; 
   --linksColor: #a5fde0;
   --promptColor: #7ee787;     
 
@@ -43,7 +43,10 @@ body {
 }
 
 .file-name{
-    color: orange;
+    color: var(--highlightColor);
+}
+.file-name:hover{
+    color: var(--linksColor);
 }
 
 .terminal { 
@@ -114,6 +117,9 @@ body {
 }
 
 .links-about {
+  color: var(--highlightColor);
+}
+.links-about:hover {
   color: var(--linksColor);
 }
 
@@ -182,9 +188,6 @@ body {
   background-color: var(--promptColor);
 }
 
-.ping-link{
-  color: var(--linksColor);
-}
 .tree-output {
   color: var(--textColor);
   font-family: inherit;
