@@ -15,7 +15,9 @@ The portfolio is divided into multiple pages, including a main terminal interfac
 README-style introduction, and a projects section. The project focuses on semantic HTML, CSS
 layouts, reusable styling, navigation between pages, and responsive interface design.
 
-<a href="https://portfolio-web-dev-psi.vercel.app/">Take a look, the website is deployed!</a> 
+<a href="https://portfolio-web-dev-psi.vercel.app/">Take a look, the website is deployed!</a> <br>
+If you downloaded the entire repo, simply open the `portfolio-web-dev/index.html` file to view the portfolio.
 
 ![print](/portfolio-project-01/projectsScreenshots/web-dev.png)
 ![print](/portfolio-project-01/projectsScreenshots/web-dev-2.png)
+
